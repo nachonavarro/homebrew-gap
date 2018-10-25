@@ -11,9 +11,8 @@ class Gap < Formula
   depends_on "readline"
 
   def install
-    # ENV.deparallelize
     system "./autogen.sh"
-    system "./configure --with-readline=/usr/local/opt/readline"
-    system "make"
+    system "./configure", "--with-readline=/usr/local/opt/readline"
+    system "make", "install"
   end
 end
