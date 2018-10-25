@@ -13,6 +13,6 @@ class Gap < Formula
   def install
     system "./autogen.sh"
     system "./configure", "--with-readline=/usr/local/opt/readline"
-    system "make", "install"
+    system "make"
   end
 end
