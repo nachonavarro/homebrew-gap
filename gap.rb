@@ -11,9 +11,9 @@ class Gap < Formula
   depends_on "readline"
 
   def install
-    system "mkdir gap-headers"
     system "./autogen.sh"
-    system "./configure", "--with-readline=/usr/local/opt/readline", "--includedir=gap-headers"
-    system "make install"
+    mkdir "headers"
+    system "./configure", "--with-readline=/usr/local/opt/readline", "--includedir=#{buildpath}/headers"
+    system "make", "install"
   end
 end
