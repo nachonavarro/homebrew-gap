@@ -1,9 +1,9 @@
 class Gap < Formula
   desc "GAP - Groups, Algorithms, Programming - a System for Computational Discrete Algebra"
   homepage "https://www.gap-system.org/"
-  url "https://github.com/gap-system/gap/archive/v4.9.3.tar.gz"
-  sha256 "f07e99b37391c9a1fdbe76721327e30b698e4835d088131615a1f6a5cebdf7e0"
-  version "4.9.3"
+  url "https://github.com/gap-system/gap/releases/download/v4.11.0/gap-4.11.0.tar.gz"
+  # sha256 "f07e99b37391c9a1fdbe76721327e30b698e4835d088131615a1f6a5cebdf7e0"
+  version "4.11.0"
 
   depends_on "autoconf" => :build
   depends_on "libtool" => :build
